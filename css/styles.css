@@ -4,6 +4,7 @@ body {
   /* center everything except inline */
   text-align: center;
   background-color: #f6f6e9;
+  color: #393e46;
   /* font-family: Arial, sans-serif; */
   /* font-family: monospace; */
   /* font-family: Andale Mono, monospace; */
@@ -20,14 +21,91 @@ div {
 h1 {
   /* overwite default browser settings */
   margin: 0;
+  /* font-size: 40px; */
+  /* if want font size to be relative for zooming: */
+  /* 100% is 16px => 200% is 32 px */
+  /* font-size: 200%; */
+  /* another common way to make relative font size: */
+  /* 1em is 16px, so 2em is 32px */
+  /* em could inherit, if body is defined as 2em, then everything gets 2 times larger compared to 1em default. Same to percentages. */
+  font-size: 2em;
+  color: #194769;
   /* center with specified width */
   /* width: 10%;
   margin: 0 auto */
   /* display: inline;
   display: inline-block; */
   /* background-color: #f6f6e9; */
+  /* line-height: 2; */
+}
+h2 {
+  color: #194769;
 }
 
+h3 {
+  color: #194769;
+}
+.blueText {
+    color: #194769;
+}
+
+hr {
+  border: dotted #d7eef2 6px;
+  border-bottom: none;
+  margin: 100px auto;
+}
+.skills {
+  /* position: relative; */
+}
+
+.contact-me {
+  line-height: 2;
+}
+
+.btn {
+  /* padding-top: 30px; */
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #f2855e;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #194769;
+  text-decoration: none;
+}
+
+.skill-row {
+  /* center after 50% width */
+  margin: 0 auto 0 auto;
+  width: 50%;
+  text-align: left;
+  line-height: 2;
+  /* display: inline; */
+}
+
+.img50 {
+    width: 30%;
+    /* margin: 0 auto; */
+    /* make text to wrap around img, should be avoided to use, messy */
+    float: left;
+    /* add space to right of image */
+    margin-right: 30px;
+}
+
+.skill-row-new {
+  /* clear what was floating on the left, start new */
+  clear: left;
+  margin: 0 auto 0 auto;
+  width: 50%;
+  text-align: left;
+  line-height: 2;
+}
 /* .redDiv {
   margin: 0;
   margin-left: 200px;
@@ -72,7 +150,7 @@ h1 {
   /* margin: 0 auto; */
 }
 
-.bottom-container {
+.bottom-container0 {
     position: relative;
     /* padding-top: 100px; */
   /* margin-top: 50px; */
@@ -88,4 +166,32 @@ h1 {
   /* bottom: 100px; */
   /* margin-top: 50px */
   /* margin: 0 auto; */
+}
+
+.bottom-container {
+  background-color: #194769;
+    /* position: relative; */
+    /* padding-top: 100px; */
+  /* margin-top: 50px; */
+  /* width: 200px; */
+  /* height: 100px; */
+  margin: 0;
+  padding-top: 25px;
+
+}
+
+a {
+  color: #f6f6e9;
+  margin: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f2855e;
+}
+
+.copyright {
+  color: #eeeeee;
+  font-size: 50%;
+  padding-top: 30px;
 }
