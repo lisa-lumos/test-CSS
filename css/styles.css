@@ -1,195 +1,223 @@
-/***********************TAG SELECTORS***********************/
+/* background-color: yellow; */
+/* color: #393e46; */
+/* font-family: Arial, sans-serif; */
+/* font-family: monospace; */
+/* font-family: Andale Mono, monospace; */
+/* font-family: Courier, monospace; */
+/* font-family: Lucidatypewriter, monospace; */
+/* font-family: verdana, sans-serif; */
+/* font-family: 'Merriweather', serif; */
 body {
-  color: #101312;
   margin: 0;
   text-align: center;
-  font-family: "Merriweather", serif;
+  background-color: #f6f6e9;
+  font-family: Courier New, Monaco, monospace;
 }
-h1 {
-  color: #66bfbf;
-  font-size: 5.625rem;
-  margin: 50px auto 0 auto;
-  font-family: "Sacramento", cursive;
-  /*100% = 16px = 1em
-    x%   = 90px
-  */
-}
-h2 {
-  color: #66bfbf;
-  font-family: "Montserrat", sans-serif;
-  font-size: 2.5rem;
-  font-weight: normal;
-  padding-bottom: 10px;
-}
-h3 {
-  font-family: "Montserrat", sans-serif;
-  color: #11999e;
-  font-size: 2rem;
+
+div {
+  /* background-color: #f6f6e9; */
+  /* padding: 20px; */
+  /* margin: 0; */
 }
 
 p {
+  /* background-color: #f6f6e9; */
+  /* padding: 20px; */
+  /* margin: 0; */
+  /* clear: left; */
   line-height: 2;
 }
 
-hr {
-  border: dotted #b3fdf0 6px;
-  border-bottom: none;
-  width: 4%;
-  margin: 100px auto;
-}
-a {
-  color: #11999e;
-  font-family: "Montserrat", sans-serif;
-  margin: 10px 20px;
-  text-decoration: none;
-  font-size: 1.25rem;
-}
-a:hover {
-  color: #e4f9f5;
-}
-/***********************CLASS SELECTORS***********************/
+/* padding-top: 100px; */
+/* margin-top: 50px; */
+/* width: 200px; */
+/* background-color: #f6f6e9; */
 .top-container {
-  background-color: #e4f9f5;
   position: relative;
-  padding-top: 100px;
-}
-.middle-container {
-  margin: 100px 0;
-}
-.bottom-container {
-  background-color: #66bfbf;
-  padding: 50px 0 20px;
-}
-.skill-row {
-  width: 50%;
-  margin: 150px auto 100px auto;
-  text-align: left;
-}
-.profile {
-  width: 50%;
-  margin: auto;
-}
-.intro {
-  margin: 35px auto;
-}
-.profile-image {
-  width: 40%;
-}
-.contact-message {
-  width: 35%;
-  margin: 40px auto 60px;
-}
-.copyright {
-  color: #e4f9f5;
-  font-size: 0.7rem;
-  padding: 20px 0;
-}
-.top-cloud {
-  position: absolute;
-  top: 40px;
-  right: 300px;
-}
-.bottom-cloud {
-  position: absolute;
-  left: 250px;
-  bottom: 300px;
-}
-.guitar-image {
-  width: 25%;
-  float: right;
-  margin: auto 0px auto 30px;
-}
-.programming-image {
-  width: 25%;
-  float: left;
-  margin-right: 30px;
-}
-.msg {
-  font-family: "Montserrat", sans-serif;
-  color: #11999e;
-  width: 60%;
-  margin: 0 auto;
-}
-.typing h2 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid #11999e; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.1em; /* Adjust as needed */
-  animation: typing 3.5s steps(40, end) forwards,
-    blink-caret 0.75s step-end infinite;
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 40%;
-  }
+  height: 100px;
 }
 
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: #11999e;
-  }
+/* top: 50px; */
+/* left: 80%; */
+/* margin-bottom: 50px; */
+/* margin: 0 auto; */
+.cloud1 {
+  position: absolute;
+  right: 20%;
+  bottom: 50px;
 }
-.btn {
-  -moz-box-shadow: 0px 8px 13px -7px #11999e;
-  -webkit-box-shadow: 0px 8px 13px -7px #11999e;
-  box-shadow: 0px 8px 13px -7px #11999e;
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0.05, #66bfbf),
-    color-stop(1, #11999e)
-  );
-  background: -moz-linear-gradient(center top, #66bfbf 5%, #11999e 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#66bfbf', endColorstr='#11999e');
-  background-color: #66bfbf;
-  -webkit-border-top-left-radius: 8px;
-  -moz-border-radius-topleft: 8px;
-  border-top-left-radius: 8px;
-  -webkit-border-top-right-radius: 8px;
-  -moz-border-radius-topright: 8px;
-  border-top-right-radius: 8px;
-  -webkit-border-bottom-right-radius: 8px;
-  -moz-border-radius-bottomright: 8px;
-  border-bottom-right-radius: 8px;
-  -webkit-border-bottom-left-radius: 8px;
-  -moz-border-radius-bottomleft: 8px;
-  border-bottom-left-radius: 8px;
-  text-indent: 0;
-  display: inline-block;
-  color: #ffffff;
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-  font-weight: normal;
-  font-style: normal;
-  height: 49px;
-  line-height: 49px;
-  width: 166px;
-  text-decoration: none;
-  text-align: center;
+
+/* font-size: 40px; */
+/* if want font size to be relative for zooming: */
+/* 100% is 16px => 200% is 32 px */
+/* font-size: 200%; */
+/* another common way to make relative font size: */
+/* 1em is 16px, so 2em is 32px */
+/* em could inherit, if body is defined as 2em, then everything gets 2 times larger compared to 1em default. Same to percentages. */
+/* font-size: 2rem; */
+/*  */
+/* position: fixed; */
+/* top: 0; */
+/* center with specified width */
+/* width: 10%; */
+/* margin: 0 auto 0 auto; */
+/* margin: 0 auto */
+/* display: inline; */
+/* display: inline-block; */
+/* background-color: #f6f6e9; */
+/* line-height: 2; */
+/* visibility: hidden; */
+h1 {
+  /* overwite default browser settings */
+  margin-top: 0;
+  color: #194769;
+  /* font-weight: normal; */
+  /* line-height: 2; */
 }
-.btn:hover {
-  background: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0.05, #11999e),
-    color-stop(1, #66bfbf)
-  );
-  background: -moz-linear-gradient(center top, #11999e 5%, #66bfbf 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#11999e', endColorstr='#66bfbf');
-  background-color: #11999e;
+
+.blueText {
+  color: #194769;
 }
-.btn:active {
+
+/* padding-top: 100px; */
+/* margin-top: 50px; */
+/* width: 200px; */
+.bottomcloud-container {
   position: relative;
-  top: 1px;
+  height: 100px;
+}
+
+/* top: 50px; */
+/* bottom: 100px; */
+/* margin-top: 50px */
+/* margin: 0 auto; */
+.cloud2 {
+  position: absolute;
+  left: 20%;
+  bottom: 50px;
+}
+
+h2 {
+  color: #194769;
+}
+
+h3 {
+  /* margin: 0; */
+  color: #194769;
+}
+
+hr {
+  border: dotted #d7eef2 6px;
+  border-bottom: none;
+  margin: 100px auto;
+}
+
+.middle-container {}
+
+.skills {
+  /* position: relative; */
+}
+
+/* display: inline; */
+.skill-row {
+  /* center after 50% width */
+  margin: 0 auto 0 auto;
+  width: 50%;
+  text-align: left;
+  line-height: 2;
+}
+
+/* margin: 0 auto; */
+/* make text to wrap around img, should be avoided to use, messy */
+/* float: left; */
+/* add space to right of image */
+/* margin-right: 30px; */
+.img50 {
+  width: 25%;
+  /* float: left; */
+  /* margin-right: 30px; */
+}
+
+/* .skill-row-new { */
+/* clear what was floating on the left, start new */
+/* clear: left; */
+/* margin: 0 auto 0 auto; */
+/* width: 50%; */
+/* text-align: left; */
+/* line-height: 2; */
+/* } */
+.contact-me {
+  line-height: 2;
+}
+
+.btn {
+  /* padding-top: 30px; */
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #194769;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #f2855e;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* .redDiv {
+  margin: 0;
+  margin-left: 200px;
+  background-color: red;
+  border: solid 20px;
+  border-color: black;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+}
+
+.blueDiv {
+  margin: 0;
+  margin-left: 440px;
+  border: solid 20px;
+  background-color: blue;
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  position: relative;
+  left: 20px;
+} */
+.undline {
+  text-decoration: underline;
+}
+
+.bottom-container {
+  background-color: #194769;
+  /* position: relative; */
+  padding-top: 50px;
+  margin-top: 50px;
+  /* width: 200px; */
+  height: 100px;
+  /* margin-top: 20px; */
+  /* padding-top: 25px; */
+}
+
+.footer-link {
+  color: #a9855e;
+  margin: 30px;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #f2855e;
+}
+
+.copyright {
+  color: #eeeeee;
+  font-size: 80%;
+  padding-top: 30px;
 }
